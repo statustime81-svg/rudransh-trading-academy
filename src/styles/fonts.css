@@ -1,0 +1,64 @@
+
+/* RUDRANSH TRADING ACADEMY
+   PREMIUM TYPOGRAPHY SYSTEM
+*/
+
+:root {
+  --font-primary: "Geist", sans-serif;
+  --font-heading: "DM Serif Display", serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+.font-display {
+  font-family: var(--font-heading);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.text-luxury {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.heading-premium {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+
+.heading-cinematic {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+
+.text-gold {
+  color: #d6ad52;
+}
+
+.text-muted-premium {
+  color: #aeb9c8;
+}
+
+@media (max-width: 640px) {
+  .heading-premium {
+    letter-spacing: -0.035em;
+  }
+}

@@ -1,0 +1,247 @@
+
+/* ==========================================
+   RUDRANSH TRADING ACADEMY
+   PREMIUM MOTION DESIGN SYSTEM
+   Developed by NEXOVA X
+========================================== */
+
+:root {
+  --motion-ease-out:
+    cubic-bezier(0.22, 1, 0.36, 1);
+
+  --motion-ease-cinematic:
+    cubic-bezier(0.76, 0, 0.24, 1);
+
+  --motion-fast: 200ms;
+  --motion-normal: 450ms;
+  --motion-slow: 850ms;
+}
+
+/* ==========================================
+   BASIC ENTRANCE ANIMATIONS
+========================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation:
+    fadeIn 0.6s ease-out both;
+}
+
+.animate-fade-up {
+  animation:
+    fadeUp 0.8s var(--motion-ease-out) both;
+}
+
+.animate-fade-down {
+  animation:
+    fadeDown 0.8s var(--motion-ease-out) both;
+}
+
+.animate-scale-reveal {
+  animation:
+    scaleReveal 0.8s var(--motion-ease-out) both;
+}
+
+/* ==========================================
+   LUXURY GOLD ANIMATIONS
+========================================== */
+
+@keyframes goldShimmer {
+  0% {
+    background-position: 200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.gold-shimmer-text {
+  background-image: linear-gradient(
+    100deg,
+    #aa7f32 0%,
+    #d6ad52 30%,
+    #fff0bf 50%,
+    #d6ad52 70%,
+    #aa7f32 100%
+  );
+
+  background-size: 220% auto;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+
+  animation:
+    goldShimmer 8s linear infinite;
+}
+
+@keyframes goldLineReveal {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.gold-line-reveal {
+  transform-origin: left center;
+
+  animation:
+    goldLineReveal 1.4s
+    var(--motion-ease-out) both;
+}
+
+/* ==========================================
+   SUBTLE FLOATING EFFECT
+========================================== */
+
+@keyframes premiumFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.premium-float {
+  animation:
+    premiumFloat 6s ease-in-out infinite;
+}
+
+/* ==========================================
+   CARD HOVER EFFECTS
+========================================== */
+
+.premium-hover-lift {
+  transition:
+    transform var(--motion-normal)
+      var(--motion-ease-out),
+    border-color var(--motion-normal) ease,
+    box-shadow var(--motion-normal) ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .premium-hover-lift:hover {
+    transform: translateY(-6px);
+
+    border-color:
+      rgba(214, 173, 82, 0.35);
+
+    box-shadow:
+      0 24px 60px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* ==========================================
+   GLASS EFFECT
+========================================== */
+
+.premium-glass {
+  background:
+    rgba(10, 24, 41, 0.82);
+
+  border:
+    1px solid rgba(255, 255, 255, 0.09);
+
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+/* ==========================================
+   IMAGE REVEAL
+========================================== */
+
+@keyframes imageReveal {
+  from {
+    opacity: 0;
+    transform:
+      scale(1.07) translateY(14px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      scale(1) translateY(0);
+  }
+}
+
+.image-reveal {
+  animation:
+    imageReveal 1.1s
+    var(--motion-ease-out) both;
+}
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in,
+  .animate-fade-up,
+  .animate-fade-down,
+  .animate-scale-reveal,
+  .gold-shimmer-text,
+  .gold-line-reveal,
+  .premium-float,
+  .image-reveal {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .premium-hover-lift {
+    transition: none !important;
+  }
+}

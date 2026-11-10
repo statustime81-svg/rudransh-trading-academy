@@ -1,0 +1,222 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #071426;
+  --color-brand-dark: #111318;
+  --color-brand-gold: #d6ad52;
+  --color-brand-green: #13a875;
+  --color-brand-ivory: #f8f7f2;
+
+  --font-sans: "Geist", sans-serif;
+  --font-display: "DM Serif Display", serif;
+}
+
+:root {
+  font-family: "Geist", sans-serif;
+  color: #f8f7f2;
+  background: #071426;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: #d6ad52;
+  color: #071426;
+}
+
+.container-premium {
+  width: min(100% - 40px, 1280px);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  display: inline-block;
+  color: #d6ad52;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.btn-gold {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 1px solid #d6ad52;
+  border-radius: 10px;
+  background: #d6ad52;
+  color: #071426;
+  font-weight: 600;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn-gold:hover {
+  background: #ebc771;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgb(214 173 82 / 15%);
+}
+
+.btn-outline {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border: 1px solid rgb(214 173 82 / 45%);
+  border-radius: 10px;
+  color: #f8f7f2;
+  font-weight: 600;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn-outline:hover {
+  border-color: #d6ad52;
+  background: rgb(214 173 82 / 8%);
+  transform: translateY(-2px);
+}
+
+.premium-card {
+  padding: 30px;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 20px;
+  background: #101e31;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.premium-card:hover {
+  transform: translateY(-5px);
+  border-color: rgb(214 173 82 / 35%);
+  box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
+}
+
+:focus-visible {
+  outline: 2px solid #d6ad52;
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .container-premium {
+    width: calc(100% - 32px);
+  }
+
+  .premium-card {
+    padding: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+
+
+
+/* ==========================================
+   RTA SIGNATURE GLASS NAVBAR
+========================================== */
+
+html {
+  scroll-padding-top: 120px;
+}
+
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+#main-content {
+  min-width: 0;
+}
+
+/* Smooth glass fallback */
+@supports not (backdrop-filter: blur(16px)) {
+  header nav,
+  header > div {
+    background-color: rgba(7, 14, 25, 0.97);
+  }
+}
+
+/* Navbar logo polish */
+header img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Reduce motion when requested */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+
+  section[id] {
+    scroll-margin-top: 110px;
+  }
+}
