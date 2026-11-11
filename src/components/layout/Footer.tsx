@@ -171,33 +171,62 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Compact NEXOVA Credit */}
-            <div className="mt-4 flex items-center gap-2.5 border-t border-white/10 pt-3">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[#FFD21A]/35 bg-white p-1 shadow-[0_0_18px_rgba(255,210,26,0.10)]">
-                {nexovaFailed ? (
-                  <span className="text-xs font-bold text-black">
-                    NX
-                  </span>
-                ) : (
-                  <img
-                    src={NEXOVA_LOGO}
-                    alt="NEXOVA logo"
-                    loading="lazy"
-                    className="h-full w-full object-contain"
-                    onError={() => setNexovaFailed(true)}
-                  />
-                )}
-              </div>
+            
+{/* Compact NEXOVA Credit */}
+<a
+  href="https://www.nexovax.in/"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Visit NEXOVA X official website"
+  className="group mt-4 flex w-fit items-center gap-2.5
+             border-t border-white/10 pt-3
+             transition-all duration-300"
+>
+  {/* Circular NEXOVA Logo */}
+  <div
+    className="flex h-11 w-11 shrink-0 items-center
+               justify-center overflow-hidden rounded-full
+               border border-[#FFD21A]/35 bg-white p-1
+               shadow-[0_0_18px_rgba(255,210,26,0.10)]
+               transition-all duration-300
+               group-hover:scale-110
+               group-hover:border-[#FFD21A]
+               group-hover:shadow-[0_0_25px_rgba(255,210,26,0.25)]"
+  >
+    {nexovaFailed ? (
+      <span className="text-xs font-bold text-black">
+        NX
+      </span>
+    ) : (
+      <img
+        src={NEXOVA_LOGO}
+        alt="NEXOVA X logo"
+        loading="lazy"
+        className="h-full w-full object-contain"
+        onError={() => setNexovaFailed(true)}
+      />
+    )}
+  </div>
 
-              <div>
-                <p className="text-[10px] uppercase tracking-[0.12em] text-white/45">
-                  Developed By
-                </p>
-                <p className="mt-0.5 text-xs font-bold text-[#FFD21A]">
-                  NEXOVA X
-                </p>
-              </div>
-            </div>
+  {/* Developer Information */}
+  <div>
+    <p className="text-[10px] uppercase tracking-[0.12em] text-white/45">
+      Developed By
+    </p>
+
+    <p className="mt-0.5 flex items-center gap-1.5 text-xs font-bold text-[#FFD21A] transition-colors group-hover:text-[#FFE15C]">
+      NEXOVA X
+
+      <ArrowUpRight
+        size={13}
+        className="transition-transform duration-300
+                   group-hover:translate-x-0.5
+                   group-hover:-translate-y-0.5"
+      />
+    </p>
+  </div>
+</a>
+
           </div>
         </div>
 
