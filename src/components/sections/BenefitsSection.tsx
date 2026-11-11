@@ -60,7 +60,7 @@ export default function BenefitsSection() {
               className="mt-6 text-4xl font-semibold tracking-tight text-white sm:text-5xl"
             >
               What Will You
-              <span className="ml-3 font-display font-normal text-[#D6AD52]">
+              <span className="ml-3 font-display font-normal text-[#FFD21A]">
                 Explore?
               </span>
             </h2>
@@ -89,11 +89,11 @@ export default function BenefitsSection() {
                 >
                   <article className="relative flex h-full min-h-[310px] flex-col p-7">
                     <div className="flex items-start justify-between">
-                      <div className="flex h-13 w-13 items-center justify-center rounded-xl border border-[#D6AD52]/20 bg-[#D6AD52]/10 text-[#D6AD52]">
+                      <div className="flex h-13 w-13 items-center justify-center rounded-xl border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
                         <Icon size={25} />
                       </div>
 
-                      <span className="text-sm font-semibold text-[#D6AD52]/60">
+                      <span className="text-sm font-semibold text-[#FFD21A]/60">
                         {benefit.number}
                       </span>
                     </div>
@@ -108,7 +108,7 @@ export default function BenefitsSection() {
 
                     <a
                       href="#courses"
-                      className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#D6AD52]"
+                      className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[#FFD21A]"
                     >
                       View Curriculum
                       <ArrowUpRight size={16} />

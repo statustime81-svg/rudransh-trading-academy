@@ -53,11 +53,11 @@ function ReviewStars({ rating }: { rating: number }) {
           key={index}
           size={16}
           strokeWidth={1.4}
-          fill={index < total ? "#D6AD52" : "none"}
+          fill={index < total ? "#FFD21A" : "none"}
           className={
             index < total
-              ? "text-[#D6AD52]"
-              : "text-[#D6AD52]/20"
+              ? "text-[#FFD21A]"
+              : "text-[#FFD21A]/20"
           }
         />
       ))}
@@ -299,7 +299,7 @@ export default function ReviewsSection({
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
       >
-        <div className="absolute left-1/2 top-1/2 h-[320px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#D6AD52]/[0.035] blur-[100px]" />
+        <div className="absolute left-1/2 top-1/2 h-[320px] w-[640px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FFD21A]/[0.035] blur-[100px]" />
       </div>
 
       <div className="relative mx-auto max-w-6xl">
@@ -307,7 +307,7 @@ export default function ReviewsSection({
           data-review-reveal
           className="mx-auto max-w-2xl text-center"
         >
-          <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#D6AD52]">
+          <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#FFD21A]">
             Student Testimonials
           </p>
 
@@ -316,7 +316,7 @@ export default function ReviewsSection({
             className="mt-3 font-display text-[clamp(2.1rem,4vw,4rem)] leading-[1.08]"
           >
             Learner{" "}
-            <span className="italic text-[#D6AD52]">
+            <span className="italic text-[#FFD21A]">
               Stories.
             </span>
           </h2>
@@ -336,14 +336,14 @@ export default function ReviewsSection({
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
           >
-            <div className="overflow-hidden rounded-[28px] border border-[#D6AD52]/20 bg-[#070B12] shadow-[0_25px_70px_rgba(0,0,0,0.32)]">
-              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#D6AD52]/80 to-transparent" />
+            <div className="overflow-hidden rounded-[28px] border border-[#FFD21A]/20 bg-[#070B12] shadow-[0_25px_70px_rgba(0,0,0,0.32)]">
+              <div className="h-px w-full bg-gradient-to-r from-transparent via-[#FFD21A]/80 to-transparent" />
 
               <div className="px-5 py-5 sm:px-7 sm:py-6 lg:px-8">
                 {/* Top row */}
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="text-[11px] uppercase tracking-[0.18em] text-[#D6AD52]">
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-[#FFD21A]">
                       Learner Stories /{" "}
                       {String(currentIndex + 1).padStart(
                         2,
@@ -357,7 +357,7 @@ export default function ReviewsSection({
                       type="button"
                       onClick={previousReview}
                       aria-label="Previous review"
-                      className="flex h-10 w-10 items-center justify-center rounded-full border border-[#D6AD52]/30 text-[#D6AD52] transition-all duration-300 hover:bg-[#D6AD52]/10"
+                      className="flex h-10 w-10 items-center justify-center rounded-full border border-[#FFD21A]/30 text-[#FFD21A] transition-all duration-300 hover:bg-[#FFD21A]/10"
                     >
                       <ArrowLeft size={17} />
                     </button>
@@ -366,7 +366,7 @@ export default function ReviewsSection({
                       type="button"
                       onClick={nextReview}
                       aria-label="Next review"
-                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#D6AD52] text-[#0B0D10] transition-all duration-300 hover:scale-105"
+                      className="flex h-10 w-10 items-center justify-center rounded-full bg-[#FFD21A] text-[#0B0D10] transition-all duration-300 hover:scale-105"
                     >
                       <ArrowRight size={17} />
                     </button>
@@ -381,7 +381,7 @@ export default function ReviewsSection({
                   <Quote
                     size={24}
                     strokeWidth={1.8}
-                    className="text-[#D6AD52]"
+                    className="text-[#FFD21A]"
                   />
 
                   <blockquote
@@ -405,7 +405,7 @@ export default function ReviewsSection({
                         onClick={() =>
                           setExpanded((prev) => !prev)
                         }
-                        className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-[#D6AD52] transition-colors hover:text-white"
+                        className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-[#FFD21A] transition-colors hover:text-white"
                       >
                         {expanded
                           ? "Show Less"
@@ -420,9 +420,9 @@ export default function ReviewsSection({
                     )}
 
                   {/* Bottom row */}
-                  <div className="mt-6 flex flex-col gap-4 border-t border-[#D6AD52]/12 pt-5 sm:flex-row sm:items-end sm:justify-between">
+                  <div className="mt-6 flex flex-col gap-4 border-t border-[#FFD21A]/12 pt-5 sm:flex-row sm:items-end sm:justify-between">
                     <div className="flex items-center gap-3">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#D6AD52]/35 bg-[#D6AD52]/10 font-semibold text-[#D6AD52]">
+                      <div className="flex h-12 w-12 items-center justify-center rounded-full border border-[#FFD21A]/35 bg-[#FFD21A]/10 font-semibold text-[#FFD21A]">
                         {getInitials(activeReview.name)}
                       </div>
 
@@ -450,10 +450,10 @@ export default function ReviewsSection({
                 {/* Bottom controls row */}
                 <div className="mt-5 flex items-center justify-between gap-4">
                   <div className="flex-1">
-                    <div className="h-[2px] overflow-hidden rounded-full bg-[#D6AD52]/15">
+                    <div className="h-[2px] overflow-hidden rounded-full bg-[#FFD21A]/15">
                       <div
                         ref={progressRef}
-                        className="h-full w-full origin-left scale-x-0 bg-[#D6AD52]"
+                        className="h-full w-full origin-left scale-x-0 bg-[#FFD21A]"
                       />
                     </div>
                   </div>
@@ -464,7 +464,7 @@ export default function ReviewsSection({
                       onClick={() =>
                         setPaused((prev) => !prev)
                       }
-                      className="flex h-9 w-9 items-center justify-center rounded-full border border-[#D6AD52]/20 text-[#D6AD52] transition-colors hover:bg-[#D6AD52]/10"
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-[#FFD21A]/20 text-[#FFD21A] transition-colors hover:bg-[#FFD21A]/10"
                       aria-label={
                         paused
                           ? "Resume autoplay"
@@ -488,7 +488,7 @@ export default function ReviewsSection({
                       href="https://maps.app.goo.gl/wqbJAvUE3t3rhXN79"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-medium text-[#D6AD52] transition-colors hover:text-white"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-[#FFD21A] transition-colors hover:text-white"
                     >
                       View on Google
                       <ArrowUpRight size={14} />

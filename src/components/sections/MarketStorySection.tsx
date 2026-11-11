@@ -58,7 +58,7 @@ export default function MarketStorySection() {
     >
       <div className="container-premium py-20 text-center sm:py-24">
         <Reveal>
-          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#D6AD52]/20 bg-[#D6AD52]/10 text-[#D6AD52]">
+          <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
             <ChartNoAxesCombined size={27} />
           </div>
         </Reveal>
@@ -73,7 +73,7 @@ export default function MarketStorySection() {
             className="mx-auto mt-5 max-w-4xl text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl"
           >
             Explore the Market.
-            <span className="mt-2 block font-display font-normal text-[#D6AD52]">
+            <span className="mt-2 block font-display font-normal text-[#FFD21A]">
               One Concept at a Time.
             </span>
           </h2>
@@ -92,8 +92,8 @@ export default function MarketStorySection() {
 
       <div className="container-premium py-20 sm:py-24">
         <Reveal>
-          <div className="mx-auto max-w-4xl rounded-[26px] border border-[#D6AD52]/15 bg-[#101F33] p-7 text-center sm:p-12">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#D6AD52]/10 text-[#D6AD52]">
+          <div className="mx-auto max-w-4xl rounded-[26px] border border-[#FFD21A]/15 bg-[#101F33] p-7 text-center sm:p-12">
+            <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-[#FFD21A]/10 text-[#FFD21A]">
               <ShieldCheck size={25} />
             </div>
 

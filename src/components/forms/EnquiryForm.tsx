@@ -40,7 +40,7 @@ import {
 const inputClass = [
   "w-full min-h-11",
   "rounded-xl",
-  "border border-[#D6AD52]/20",
+  "border border-[#FFD21A]/20",
   "bg-[#090C10]",
   "px-3.5 py-3",
   "text-[13px] text-[#F5F3EE]",
@@ -48,11 +48,11 @@ const inputClass = [
   "placeholder:text-[#F5F3EE]/35",
   "transition-[border-color,background-color,box-shadow]",
   "duration-300",
-  "hover:border-[#D6AD52]/40",
-  "focus:border-[#D6AD52]",
+  "hover:border-[#FFD21A]/40",
+  "focus:border-[#FFD21A]",
   "focus:bg-[#11151B]",
   "focus:ring-[3px]",
-  "focus:ring-[#D6AD52]/10",
+  "focus:ring-[#FFD21A]/10",
   "aria-[invalid=true]:border-red-400/60",
 ].join(" ");
 
@@ -200,7 +200,7 @@ export default function EnquiryForm() {
       className="
         relative isolate overflow-hidden
         rounded-[26px]
-        border border-[#D6AD52]/25
+        border border-[#FFD21A]/25
         bg-[#11151B]
         p-[clamp(1.1rem,2.2vw,2rem)]
         text-[#F5F3EE]
@@ -210,13 +210,13 @@ export default function EnquiryForm() {
       {/* Background glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-28 -top-28 h-64 w-64 rounded-full bg-[#D6AD52]/[0.07] blur-[80px]"
+        className="pointer-events-none absolute -right-28 -top-28 h-64 w-64 rounded-full bg-[#FFD21A]/[0.07] blur-[80px]"
       />
 
       {/* Gold border */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-[20%] top-0 h-px bg-gradient-to-r from-transparent via-[#D6AD52]/80 to-transparent"
+        className="absolute inset-x-[20%] top-0 h-px bg-gradient-to-r from-transparent via-[#FFD21A]/80 to-transparent"
       />
 
       <div className="relative">
@@ -224,16 +224,16 @@ export default function EnquiryForm() {
 
         <div data-form-reveal>
           <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#D6AD52]" />
+            <span className="h-1.5 w-1.5 rounded-full bg-[#FFD21A]" />
 
-            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D6AD52]">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#FFD21A]">
               Admission Enquiry
             </span>
           </div>
 
           <h3 className="mt-3 font-display text-[clamp(1.55rem,2.4vw,2.2rem)] leading-[1.15] tracking-[-0.025em]">
             Begin Your{" "}
-            <span className="italic text-[#D6AD52]">
+            <span className="italic text-[#FFD21A]">
               Learning Journey.
             </span>
           </h3>
@@ -246,7 +246,7 @@ export default function EnquiryForm() {
 
         <div
           data-form-reveal
-          className="my-5 h-px bg-gradient-to-r from-[#D6AD52]/35 via-[#D6AD52]/10 to-transparent"
+          className="my-5 h-px bg-gradient-to-r from-[#FFD21A]/35 via-[#FFD21A]/10 to-transparent"
         />
 
         {/* FORM FIELDS */}
@@ -261,11 +261,11 @@ export default function EnquiryForm() {
             >
               <UserRound
                 size={15}
-                className="text-[#D6AD52]"
+                className="text-[#FFD21A]"
               />
 
               Full Name
-              <span className="text-[#D6AD52]">
+              <span className="text-[#FFD21A]">
                 *
               </span>
             </label>
@@ -300,11 +300,11 @@ export default function EnquiryForm() {
             >
               <Phone
                 size={15}
-                className="text-[#D6AD52]"
+                className="text-[#FFD21A]"
               />
 
               Mobile Number
-              <span className="text-[#D6AD52]">
+              <span className="text-[#FFD21A]">
                 *
               </span>
             </label>
@@ -340,11 +340,11 @@ export default function EnquiryForm() {
             >
               <BookOpen
                 size={15}
-                className="text-[#D6AD52]"
+                className="text-[#FFD21A]"
               />
 
               Interested Course
-              <span className="text-[#D6AD52]">
+              <span className="text-[#FFD21A]">
                 *
               </span>
             </label>
@@ -377,7 +377,7 @@ export default function EnquiryForm() {
 
               <ChevronDown
                 size={17}
-                className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-[#D6AD52]"
+                className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-[#FFD21A]"
                 aria-hidden="true"
               />
             </div>
@@ -399,11 +399,11 @@ export default function EnquiryForm() {
             >
               <CalendarDays
                 size={15}
-                className="text-[#D6AD52]"
+                className="text-[#FFD21A]"
               />
 
               Preferred Batch
-              <span className="text-[#D6AD52]">
+              <span className="text-[#FFD21A]">
                 *
               </span>
             </label>
@@ -434,7 +434,7 @@ export default function EnquiryForm() {
 
               <ChevronDown
                 size={17}
-                className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-[#D6AD52]"
+                className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-[#FFD21A]"
                 aria-hidden="true"
               />
             </div>
@@ -460,7 +460,7 @@ export default function EnquiryForm() {
           >
             <MessageCircle
               size={15}
-              className="text-[#D6AD52]"
+              className="text-[#FFD21A]"
             />
 
             Your Message
@@ -498,17 +498,17 @@ export default function EnquiryForm() {
             className="
               group flex min-h-12 w-full
               items-center justify-center gap-2.5
-              rounded-xl bg-[#D6AD52]
+              rounded-xl bg-[#FFD21A]
               px-5 py-3
               text-[13px] font-semibold
               text-[#0B0D10]
               transition-all duration-300
               hover:-translate-y-0.5
-              hover:bg-[#E5C47B]
-              hover:shadow-[0_12px_35px_rgba(214,173,82,0.2)]
+              hover:bg-[#FFE15C]
+              hover:shadow-[0_12px_35px_rgba(255,210,26,0.2)]
               focus-visible:outline-2
               focus-visible:outline-offset-4
-              focus-visible:outline-[#D6AD52]
+              focus-visible:outline-[#FFD21A]
               disabled:cursor-not-allowed
               disabled:opacity-60
             "
@@ -534,7 +534,7 @@ export default function EnquiryForm() {
         >
           <ShieldCheck
             size={15}
-            className="mt-0.5 shrink-0 text-[#D6AD52]/75"
+            className="mt-0.5 shrink-0 text-[#FFD21A]/75"
           />
 
           <p className="max-w-md text-center text-[10px] leading-5 text-[#F5F3EE]/45">

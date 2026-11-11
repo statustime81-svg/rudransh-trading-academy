@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { siteConfig } from "@/config/site";
 import "@/styles/hero.css";
+import "@/styles/hero-gold-overrides.css";
 
 gsap.registerPlugin(ScrollTrigger);
 

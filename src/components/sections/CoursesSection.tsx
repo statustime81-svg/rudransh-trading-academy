@@ -95,16 +95,16 @@ function CourseCard({
       className="
         group relative flex h-full flex-col
         rounded-[22px]
-        border border-[#D6AD52]/15
+        border border-[#FFD21A]/15
         bg-[#F5F3EE]/[0.025]
         p-[clamp(1rem,2vw,1.5rem)]
         transition-[transform,border-color,background-color,box-shadow]
         duration-300
         hover:-translate-y-1
-        hover:border-[#D6AD52]/45
-        hover:bg-[#D6AD52]/[0.035]
+        hover:border-[#FFD21A]/45
+        hover:bg-[#FFD21A]/[0.035]
         hover:shadow-[0_14px_40px_rgba(0,0,0,0.2)]
-        focus-within:border-[#D6AD52]/50
+        focus-within:border-[#FFD21A]/50
       "
     >
       {/* Full-card link behind interactive content */}
@@ -118,7 +118,7 @@ function CourseCard({
           rounded-[22px]
           focus-visible:outline-2
           focus-visible:outline-offset-4
-          focus-visible:outline-[#D6AD52]
+          focus-visible:outline-[#FFD21A]
         "
       />
 
@@ -128,9 +128,9 @@ function CourseCard({
           className="
             flex h-11 w-11 items-center
             justify-center rounded-xl
-            border border-[#D6AD52]/20
-            bg-[#D6AD52]/10
-            text-[#D6AD52]
+            border border-[#FFD21A]/20
+            bg-[#FFD21A]/10
+            text-[#FFD21A]
             transition-transform duration-300
             group-hover:scale-105
           "
@@ -142,7 +142,7 @@ function CourseCard({
           />
         </div>
 
-        <span className="text-2xl font-semibold text-[#D6AD52]/25">
+        <span className="text-2xl font-semibold text-[#FFD21A]/25">
           {module.number}
         </span>
       </div>
@@ -166,8 +166,8 @@ function CourseCard({
       </p>
 
       {/* Topics */}
-      <div className="pointer-events-none relative z-10 mt-4 border-t border-[#D6AD52]/15 pt-4">
-        <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#D6AD52]">
+      <div className="pointer-events-none relative z-10 mt-4 border-t border-[#FFD21A]/15 pt-4">
+        <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#FFD21A]">
           Learning Topics
         </p>
 
@@ -177,7 +177,7 @@ function CourseCard({
               key={topic}
               className="flex items-start gap-2 text-xs leading-5 text-[#F5F3EE]/75"
             >
-              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#D6AD52]" />
+              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[#FFD21A]" />
               <span>{topic}</span>
             </li>
           ))}
@@ -196,12 +196,12 @@ function CourseCard({
               mt-4 inline-flex
               items-center gap-2
               text-xs font-semibold
-              text-[#D6AD52]
+              text-[#FFD21A]
               transition-colors
               hover:text-[#F5F3EE]
               focus-visible:outline-2
               focus-visible:outline-offset-4
-              focus-visible:outline-[#D6AD52]
+              focus-visible:outline-[#FFD21A]
             "
           >
             {expanded
@@ -224,12 +224,12 @@ function CourseCard({
           pointer-events-none relative z-10
           mt-auto flex items-center
           justify-between gap-3
-          border-t border-[#D6AD52]/15
+          border-t border-[#FFD21A]/15
           pt-4
         "
         style={{ marginTop: "20px" }}
       >
-        <span className="flex items-center gap-2 text-xs font-semibold text-[#D6AD52]">
+        <span className="flex items-center gap-2 text-xs font-semibold text-[#FFD21A]">
           <MessageCircle
             size={16}
             aria-hidden="true"
@@ -243,8 +243,8 @@ function CourseCard({
             flex h-8 w-8 shrink-0
             items-center justify-center
             rounded-full
-            bg-[#D6AD52]/10
-            text-[#D6AD52]
+            bg-[#FFD21A]/10
+            text-[#FFD21A]
             transition-transform duration-300
             group-hover:-translate-y-0.5
             group-hover:translate-x-0.5
@@ -320,7 +320,7 @@ export default function CoursesSection() {
       {/* Background lighting */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-32 top-0 h-72 w-72 rounded-full bg-[#D6AD52]/[0.035] blur-[90px]"
+        className="pointer-events-none absolute -right-32 top-0 h-72 w-72 rounded-full bg-[#FFD21A]/[0.035] blur-[90px]"
       />
 
       <div className="relative mx-auto max-w-6xl">
@@ -329,7 +329,7 @@ export default function CoursesSection() {
           data-course-reveal
           className="mx-auto max-w-2xl text-center"
         >
-          <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#D6AD52]">
+          <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#FFD21A]">
             Our Learning Path
           </span>
 
@@ -342,7 +342,7 @@ export default function CoursesSection() {
             "
           >
             Explore Our{" "}
-            <span className="italic text-[#D6AD52]">
+            <span className="italic text-[#FFD21A]">
               Curriculum.
             </span>
           </h2>
@@ -377,7 +377,7 @@ export default function CoursesSection() {
             className="
               inline-flex min-h-11 items-center
               justify-center gap-2
-              rounded-full bg-[#D6AD52]
+              rounded-full bg-[#FFD21A]
               px-6 py-3
               text-sm font-semibold
               text-[#0B0D10]

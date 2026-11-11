@@ -1,0 +1,33 @@
+/* Hero-specific gold update. Imported AFTER hero.css.
+   Only accent colors are changed; original structure/animations remain. */
+.rta-new-hero__eyebrow,
+.rta-new-hero__heading em,
+.rta-new-hero__scroll,
+.rta-new-hero__meta svg,
+.rta-new-hero__art-fallback span {
+  color: #FFD21A !important;
+}
+.rta-new-hero__eyebrow-dot {
+  background-color: #FFD21A !important;
+  box-shadow: 0 0 16px rgb(255 210 26 / 35%);
+}
+.rta-new-hero__primary {
+  color: #0B0D10 !important;
+  background: #FFD21A !important;
+  border-color: #FFD21A !important;
+  box-shadow: 0 10px 32px rgb(255 210 26 / 13%);
+}
+.rta-new-hero__primary:hover {
+  background: #FFE15C !important;
+  box-shadow: 0 14px 36px rgb(255 210 26 / 25%);
+}
+.rta-new-hero__secondary {
+  border-color: rgb(255 210 26 / 45%) !important;
+}
+.rta-new-hero__secondary:hover {
+  border-color: #FFD21A !important;
+  color: #FFD21A !important;
+}
+.rta-new-hero__halo {
+  background: radial-gradient(circle, rgb(255 210 26 / 12%), transparent 70%) !important;
+}

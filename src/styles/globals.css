@@ -4,7 +4,9 @@
 @theme {
   --color-brand-navy: #071426;
   --color-brand-dark: #111318;
-  --color-brand-gold: #d6ad52;
+  --color-brand-gold: #FFD21A;
+  --color-brand-gold-dark: #FFB800;
+  --color-brand-gold-light: #FFE15C;
   --color-brand-green: #13a875;
   --color-brand-ivory: #f8f7f2;
 
@@ -59,7 +61,7 @@ a {
 }
 
 ::selection {
-  background: #d6ad52;
+  background: #FFD21A;
   color: #071426;
 }
 
@@ -70,7 +72,7 @@ a {
 
 .eyebrow {
   display: inline-block;
-  color: #d6ad52;
+  color: #FFD21A;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.24em;
@@ -84,9 +86,9 @@ a {
   justify-content: center;
   gap: 10px;
   padding: 12px 24px;
-  border: 1px solid #d6ad52;
+  border: 1px solid #FFD21A;
   border-radius: 10px;
-  background: #d6ad52;
+  background: #FFD21A;
   color: #071426;
   font-weight: 600;
   transition:
@@ -96,9 +98,9 @@ a {
 }
 
 .btn-gold:hover {
-  background: #ebc771;
+  background: #FFE15C;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgb(214 173 82 / 15%);
+  box-shadow: 0 10px 30px rgb(255 210 26 / 15%);
 }
 
 .btn-outline {
@@ -108,7 +110,7 @@ a {
   justify-content: center;
   gap: 10px;
   padding: 12px 24px;
-  border: 1px solid rgb(214 173 82 / 45%);
+  border: 1px solid rgb(255 210 26 / 45%);
   border-radius: 10px;
   color: #f8f7f2;
   font-weight: 600;
@@ -119,8 +121,8 @@ a {
 }
 
 .btn-outline:hover {
-  border-color: #d6ad52;
-  background: rgb(214 173 82 / 8%);
+  border-color: #FFD21A;
+  background: rgb(255 210 26 / 8%);
   transform: translateY(-2px);
 }
 
@@ -137,12 +139,12 @@ a {
 
 .premium-card:hover {
   transform: translateY(-5px);
-  border-color: rgb(214 173 82 / 35%);
+  border-color: rgb(255 210 26 / 35%);
   box-shadow: 0 20px 50px rgb(0 0 0 / 15%);
 }
 
 :focus-visible {
-  outline: 2px solid #d6ad52;
+  outline: 2px solid #FFD21A;
   outline-offset: 4px;
 }
 
