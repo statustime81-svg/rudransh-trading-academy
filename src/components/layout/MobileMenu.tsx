@@ -91,7 +91,7 @@ export default function MobileMenu({
                     "px-4 py-3 text-sm font-medium",
                     "transition-colors duration-200",
                     active
-                      ? "border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]"
+                      ? "border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]"
                       : "border border-transparent text-slate-200 hover:bg-white/[0.06]",
                   ].join(" ")}
                 >
@@ -101,7 +101,7 @@ export default function MobileMenu({
                     size={17}
                     className={
                       active
-                        ? "text-[#FFD21A]"
+                        ? "text-[#16A34A]"
                         : "text-slate-500"
                     }
                   />
@@ -112,7 +112,7 @@ export default function MobileMenu({
             <a
               href={navigationConfig.primaryCta.href}
               onClick={onClose}
-              className="mt-4 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#FFD21A] px-5 text-sm font-semibold text-[#071426]"
+              className="mt-4 flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#16A34A] px-5 text-sm font-semibold text-[#071426]"
             >
               Enquire for Admission
               <ArrowUpRight size={17} />
@@ -127,13 +127,13 @@ export default function MobileMenu({
             >
               <MessageCircle
                 size={18}
-                className="text-[#FFD21A]"
+                className="text-[#16A34A]"
               />
               WhatsApp Us
             </a>
 
             <div className="mt-5 border-t border-white/10 pt-5 text-center">
-              <p className="text-[10px] uppercase tracking-[0.19em] text-[#FFD21A]">
+              <p className="text-[10px] uppercase tracking-[0.19em] text-[#16A34A]">
                 Learn • Analyze • Trade • Grow
               </p>
             </div>

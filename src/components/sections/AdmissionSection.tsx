@@ -28,7 +28,7 @@ export default function AdmissionSection() {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_50%,rgba(255,210,26,0.07),transparent_45%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_15%_50%,rgba(22,163,74,0.07),transparent_45%)]"
       />
 
       <div className="container-premium relative z-10">
@@ -44,7 +44,7 @@ export default function AdmissionSection() {
                 className="mt-6 text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl"
               >
                 Your Learning
-                <span className="mt-2 block font-display font-normal text-[#FFD21A]">
+                <span className="mt-2 block font-display font-normal text-[#16A34A]">
                   Journey Starts Here.
                 </span>
               </h2>
@@ -60,7 +60,7 @@ export default function AdmissionSection() {
                 <div className="flex items-center gap-3">
                   <BookOpenCheck
                     size={24}
-                    className="text-[#FFD21A]"
+                    className="text-[#F87171]"
                   />
 
                   <h3 className="text-lg font-semibold text-white">
@@ -74,7 +74,7 @@ export default function AdmissionSection() {
                       key={topic}
                       className="flex items-start gap-3 text-sm text-slate-300"
                     >
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FFD21A]" />
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#16A34A]" />
                       {topic}
                     </li>
                   ))}
@@ -84,9 +84,9 @@ export default function AdmissionSection() {
               <div className="mt-8 space-y-5">
                 <a
                   href={siteConfig.contact.tel}
-                  className="flex items-center gap-4 text-slate-300 transition-colors hover:text-[#FFD21A]"
+                  className="flex items-center gap-4 text-slate-300 transition-colors hover:text-[#16A34A]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]">
                     <PhoneCall size={20} />
                   </div>
 
@@ -105,9 +105,9 @@ export default function AdmissionSection() {
                   href={siteConfig.contact.maps}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-slate-300 transition-colors hover:text-[#FFD21A]"
+                  className="flex items-center gap-4 text-slate-300 transition-colors hover:text-[#16A34A]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]">
                     <MapPin size={20} />
                   </div>
 
@@ -128,7 +128,7 @@ export default function AdmissionSection() {
               <div className="mt-9 flex items-start gap-3 border-t border-white/10 pt-7">
                 <ShieldCheck
                   size={20}
-                  className="mt-1 shrink-0 text-[#FFD21A]"
+                  className="mt-1 shrink-0 text-[#F87171]"
                 />
 
                 <p className="text-xs leading-6 text-slate-400">
@@ -146,7 +146,7 @@ export default function AdmissionSection() {
         </div>
 
         <Reveal>
-          <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl border border-[#FFD21A]/15 bg-[#102035] p-6 text-center sm:flex-row sm:text-left">
+          <div className="mt-16 flex flex-col items-center justify-between gap-5 rounded-2xl border border-[#16A34A]/15 bg-[#102035] p-6 text-center sm:flex-row sm:text-left">
             <div>
               <h3 className="text-lg font-semibold text-white">
                 Prefer to contact us directly?

@@ -148,7 +148,7 @@ export default function TrainerSection() {
 
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-0 top-1/4 h-[450px] w-[450px] rounded-full bg-[#FFD21A]/[0.04] blur-[100px]"
+        className="pointer-events-none absolute right-0 top-1/4 h-[450px] w-[450px] rounded-full bg-[#16A34A]/[0.04] blur-[100px]"
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
@@ -162,9 +162,9 @@ export default function TrainerSection() {
           >
             {/* Outer decorative border */}
 
-            <div className="pointer-events-none absolute inset-0 rounded-[26px] border border-[#FFD21A]/15" />
+            <div className="pointer-events-none absolute inset-0 rounded-[26px] border border-[#16A34A]/15" />
 
-            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[26px] border border-[#FFD21A]/25 bg-[#161719] shadow-[0_30px_90px_rgba(0,0,0,0.4)]">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[26px] border border-[#16A34A]/25 bg-[#161719] shadow-[0_30px_90px_rgba(0,0,0,0.4)]">
 
               {/* Actual trainer image */}
 
@@ -182,12 +182,12 @@ export default function TrainerSection() {
                     onError={() => setImageError(true)}
                   />
                 ) : (
-                  <div className="flex h-full w-full flex-col items-center justify-center bg-[radial-gradient(circle_at_center,rgba(255,210,26,0.12),transparent_65%)] px-6 text-center">
-                    <div className="flex h-28 w-28 items-center justify-center rounded-full border border-[#FFD21A]/30 bg-[#FFD21A]/10">
+                  <div className="flex h-full w-full flex-col items-center justify-center bg-[radial-gradient(circle_at_center,rgba(22,163,74,0.12),transparent_65%)] px-6 text-center">
+                    <div className="flex h-28 w-28 items-center justify-center rounded-full border border-[#16A34A]/30 bg-[#16A34A]/10">
                       <GraduationCap
                         size={54}
                         strokeWidth={1.2}
-                        className="text-[#FFD21A]"
+                        className="text-[#16A34A]"
                       />
                     </div>
 
@@ -195,7 +195,7 @@ export default function TrainerSection() {
                       Rajesh Kumar
                     </p>
 
-                    <p className="mt-2 text-sm text-[#FFD21A]">
+                    <p className="mt-2 text-sm text-[#F87171]">
                       Academy Trainer
                     </p>
                   </div>
@@ -208,20 +208,20 @@ export default function TrainerSection() {
 
               {/* Top decorative label */}
 
-              <div className="absolute left-5 top-5 rounded-full border border-[#FFD21A]/30 bg-[#0B0D10]/65 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#FFD21A] backdrop-blur-lg">
+              <div className="absolute left-5 top-5 rounded-full border border-[#16A34A]/30 bg-[#0B0D10]/65 px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.16em] text-[#16A34A] backdrop-blur-lg">
                 Meet Your Trainer
               </div>
 
               {/* Bottom trainer details */}
 
               <div className="absolute bottom-7 left-6 right-6 sm:bottom-9 sm:left-9">
-                <div className="mb-4 h-px w-12 bg-[#FFD21A]" />
+                <div className="mb-4 h-px w-12 bg-[#16A34A]" />
 
                 <h3 className="font-display text-3xl text-[#F5F3EE] sm:text-4xl">
                   {siteConfig.trainer.name}
                 </h3>
 
-                <p className="mt-2 text-sm font-medium text-[#FFD21A]">
+                <p className="mt-2 text-sm font-medium text-[#16A34A]">
                   {siteConfig.trainer.title}
                 </p>
               </div>
@@ -238,9 +238,9 @@ export default function TrainerSection() {
 
             <div
               data-trainer-reveal
-              className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#FFD21A]"
+              className="flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#16A34A]"
             >
-              <span className="h-px w-9 bg-[#FFD21A]" />
+              <span className="h-px w-9 bg-[#16A34A]" />
               THE PERSON BEHIND THE LEARNING
             </div>
 
@@ -252,7 +252,7 @@ export default function TrainerSection() {
               className="mt-7 font-display text-[clamp(3rem,5vw,5.4rem)] leading-[1.08] tracking-[-0.035em]"
             >
               Meet Your
-              <span className="mt-2 block italic text-[#FFD21A]">
+              <span className="mt-2 block italic text-[#16A34A]">
                 Trainer.
               </span>
             </h2>
@@ -267,7 +267,7 @@ export default function TrainerSection() {
                 {siteConfig.trainer.name}
               </h3>
 
-              <p className="mt-2 text-sm font-medium uppercase tracking-[0.14em] text-[#FFD21A]">
+              <p className="mt-2 text-sm font-medium uppercase tracking-[0.14em] text-[#F87171]">
                 {siteConfig.trainer.title}
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function TrainerSection() {
 
             <div
               data-trainer-reveal
-              className="my-9 h-px w-full bg-[#FFD21A]/20"
+              className="my-9 h-px w-full bg-[#16A34A]/20"
             />
 
             {/* Learning areas */}
@@ -304,9 +304,9 @@ export default function TrainerSection() {
                 return (
                   <div
                     key={item.title}
-                    className="group rounded-2xl border border-[#FFD21A]/15 bg-[#F5F3EE]/[0.025] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#FFD21A]/35 hover:bg-[#FFD21A]/[0.045]"
+                    className="group rounded-2xl border border-[#16A34A]/15 bg-[#F5F3EE]/[0.025] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#16A34A]/35 hover:bg-[#16A34A]/[0.045]"
                   >
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]">
                       <Icon
                         size={22}
                         strokeWidth={1.7}
@@ -333,7 +333,7 @@ export default function TrainerSection() {
             >
               <MapPin
                 size={18}
-                className="shrink-0 text-[#FFD21A]"
+                className="shrink-0 text-[#16A34A]"
               />
 
               Rudransh Trading Academy, Punpun, Patna
@@ -347,7 +347,7 @@ export default function TrainerSection() {
             >
               <a
                 href="#courses"
-                className="group inline-flex min-h-13 items-center justify-center gap-3 rounded-full bg-[#FFD21A] px-7 py-3.5 text-sm font-semibold text-[#0B0D10] shadow-[0_12px_35px_rgba(255,210,26,0.13)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#E7C577]"
+                className="group inline-flex min-h-13 items-center justify-center gap-3 rounded-full bg-[#16A34A] px-7 py-3.5 text-sm font-semibold text-white shadow-[0_12px_35px_rgba(22,163,74,0.13)] transition-all duration-300 hover:-translate-y-1 hover:bg-[#DC2626]"
               >
                 Explore the Course
 
@@ -359,7 +359,7 @@ export default function TrainerSection() {
 
               <a
                 href="#admission"
-                className="inline-flex items-center gap-2 text-sm font-medium text-[#F5F3EE] transition-colors hover:text-[#FFD21A]"
+                className="inline-flex items-center gap-2 text-sm font-medium text-[#F5F3EE] transition-colors hover:text-[#16A34A]"
               >
                 Admission Enquiry
                 <ArrowUpRight size={17} />

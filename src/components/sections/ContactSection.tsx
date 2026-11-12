@@ -92,8 +92,8 @@ export default function ContactSection() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
       >
-        <div className="absolute -left-40 top-1/4 h-[35vw] w-[35vw] min-h-72 min-w-72 rounded-full bg-[#FFD21A]/[0.045] blur-[100px]" />
-        <div className="absolute -right-40 bottom-0 h-[30vw] w-[30vw] min-h-72 min-w-72 rounded-full bg-[#FFD21A]/[0.035] blur-[110px]" />
+        <div className="absolute -left-40 top-1/4 h-[35vw] w-[35vw] min-h-72 min-w-72 rounded-full bg-[#16A34A]/[0.045] blur-[100px]" />
+        <div className="absolute -right-40 bottom-0 h-[30vw] w-[30vw] min-h-72 min-w-72 rounded-full bg-[#16A34A]/[0.035] blur-[110px]" />
       </div>
 
       <div className="relative mx-auto max-w-[1280px]">
@@ -103,13 +103,13 @@ export default function ContactSection() {
           className="mx-auto max-w-3xl text-center"
         >
           <div className="flex items-center justify-center gap-3">
-            <span className="h-px w-8 bg-[#FFD21A]/50" />
+            <span className="h-px w-8 bg-[#16A34A]/50" />
 
-            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#FFD21A]">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#16A34A]">
               Contact & Location
             </span>
 
-            <span className="h-px w-8 bg-[#FFD21A]/50" />
+            <span className="h-px w-8 bg-[#16A34A]/50" />
           </div>
 
           <h2
@@ -117,7 +117,7 @@ export default function ContactSection() {
             className="mt-4 font-display text-[clamp(2.3rem,4.6vw,4.7rem)] leading-[1.1] tracking-[-0.035em]"
           >
             Visit or Contact
-            <span className="ml-2 italic text-[#FFD21A]">
+            <span className="ml-2 italic text-[#F87171]">
               Our Academy.
             </span>
           </h2>
@@ -142,22 +142,22 @@ export default function ContactSection() {
               className="
                 group relative flex items-center gap-4
                 rounded-[22px]
-                border border-[#FFD21A]/15
+                border border-[#16A34A]/15
                 bg-[#14171B]
                 p-[clamp(1rem,2vw,1.5rem)]
                 transition-all duration-300
                 hover:-translate-y-1
-                hover:border-[#FFD21A]/45
+                hover:border-[#16A34A]/45
                 hover:bg-[#191B1E]
                 hover:shadow-[0_15px_45px_rgba(0,0,0,0.25)]
               "
             >
-              <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl border border-[#FFD21A]/25 bg-[#FFD21A]/10 text-[#FFD21A]">
+              <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl border border-[#16A34A]/25 bg-[#16A34A]/10 text-[#16A34A]">
                 <PhoneCall size={22} strokeWidth={1.7} />
               </div>
 
               <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#FFD21A]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#16A34A]">
                   Call the Academy
                 </p>
 
@@ -172,7 +172,7 @@ export default function ContactSection() {
 
               <ArrowUpRight
                 size={20}
-                className="shrink-0 text-[#FFD21A] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                className="shrink-0 text-[#16A34A] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
             </a>
 
@@ -184,17 +184,17 @@ export default function ContactSection() {
               className="
                 group relative flex items-center gap-4
                 rounded-[22px]
-                border border-[#FFD21A]/15
+                border border-[#16A34A]/15
                 bg-[#14171B]
                 p-[clamp(1rem,2vw,1.5rem)]
                 transition-all duration-300
                 hover:-translate-y-1
-                hover:border-[#FFD21A]/45
+                hover:border-[#16A34A]/45
                 hover:bg-[#191B1E]
                 hover:shadow-[0_15px_45px_rgba(0,0,0,0.25)]
               "
             >
-              <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl border border-[#FFD21A]/25 bg-[#FFD21A]/10 text-[#FFD21A]">
+              <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl border border-[#16A34A]/25 bg-[#16A34A]/10 text-[#16A34A]">
                 <MessageCircle
                   size={23}
                   strokeWidth={1.7}
@@ -202,7 +202,7 @@ export default function ContactSection() {
               </div>
 
               <div className="min-w-0 flex-1">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#FFD21A]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#F87171]">
                   WhatsApp Enquiry
                 </p>
 
@@ -217,19 +217,19 @@ export default function ContactSection() {
 
               <ArrowUpRight
                 size={20}
-                className="shrink-0 text-[#FFD21A] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                className="shrink-0 text-[#16A34A] transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
               />
             </a>
 
             {/* ACADEMY ADDRESS */}
-            <div className="relative flex-1 rounded-[24px] border border-[#FFD21A]/20 bg-[#14171B] p-[clamp(1.2rem,2.2vw,1.75rem)]">
+            <div className="relative flex-1 rounded-[24px] border border-[#16A34A]/20 bg-[#14171B] p-[clamp(1.2rem,2.2vw,1.75rem)]">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#FFD21A]/25 bg-[#FFD21A]/10 text-[#FFD21A]">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-[#16A34A]/25 bg-[#16A34A]/10 text-[#16A34A]">
                   <MapPin size={22} strokeWidth={1.6} />
                 </div>
 
                 <div className="min-w-0">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#FFD21A]">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#16A34A]">
                     Visit Our Academy
                   </p>
 
@@ -243,13 +243,13 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="mt-7 h-px bg-[#FFD21A]/15" />
+              <div className="mt-7 h-px bg-[#16A34A]/15" />
 
               <a
                 href={MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#FFD21A] transition-colors hover:text-[#F5F3EE]"
+                className="group mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#16A34A] transition-colors hover:text-[#F5F3EE]"
               >
                 <Navigation size={16} />
 
@@ -270,7 +270,7 @@ export default function ContactSection() {
               group relative flex min-h-[360px]
               flex-col overflow-hidden
               rounded-[26px]
-              border border-[#FFD21A]/20
+              border border-[#16A34A]/20
               bg-[#14171B]
               shadow-[0_24px_70px_rgba(0,0,0,0.28)]
               sm:min-h-[430px]
@@ -278,9 +278,9 @@ export default function ContactSection() {
             "
           >
             {/* Map header */}
-            <div className="flex items-center justify-between gap-4 border-b border-[#FFD21A]/15 bg-[#14171B] px-5 py-4 sm:px-6">
+            <div className="flex items-center justify-between gap-4 border-b border-[#16A34A]/15 bg-[#14171B] px-5 py-4 sm:px-6">
               <div className="flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#FFD21A]/10 text-[#FFD21A]">
+                <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#16A34A]/10 text-[#F87171]">
                   <Navigation size={18} />
                 </div>
 
@@ -300,7 +300,7 @@ export default function ContactSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open academy location in Google Maps"
-                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#FFD21A]/25 text-[#FFD21A] transition-colors hover:bg-[#FFD21A]/10"
+                className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#16A34A]/25 text-[#16A34A] transition-colors hover:bg-[#16A34A]/10"
               >
                 <ExternalLink size={17} />
               </a>
@@ -319,11 +319,11 @@ export default function ContactSection() {
             </div>
 
             {/* Map footer */}
-            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#FFD21A]/15 bg-[#14171B] px-5 py-4 sm:px-6">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#16A34A]/15 bg-[#14171B] px-5 py-4 sm:px-6">
               <div className="flex items-center gap-2 text-xs text-[#F5F3EE]/60">
                 <MapPin
                   size={15}
-                  className="text-[#FFD21A]"
+                  className="text-[#16A34A]"
                 />
                 Dularpur, Punpun, Patna
               </div>
@@ -332,7 +332,7 @@ export default function ContactSection() {
                 href={MAPS_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-semibold text-[#FFD21A] transition-colors hover:text-[#F5F3EE]"
+                className="inline-flex items-center gap-2 text-xs font-semibold text-[#16A34A] transition-colors hover:text-[#F5F3EE]"
               >
                 Open Full Map
                 <ArrowUpRight size={15} />
@@ -344,11 +344,11 @@ export default function ContactSection() {
         {/* BOTTOM NOTE */}
         <div
           data-contact-reveal
-          className="mt-6 flex items-start gap-3 rounded-2xl border border-[#FFD21A]/10 bg-[#F5F3EE]/[0.025] px-5 py-4"
+          className="mt-6 flex items-start gap-3 rounded-2xl border border-[#16A34A]/10 bg-[#F5F3EE]/[0.025] px-5 py-4"
         >
           <Clock3
             size={18}
-            className="mt-0.5 shrink-0 text-[#FFD21A]"
+            className="mt-0.5 shrink-0 text-[#16A34A]"
           />
 
           <p className="text-xs leading-6 text-[#F5F3EE]/60">

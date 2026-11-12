@@ -48,7 +48,7 @@ export default function GallerySection({
       <div className="container-premium">
         <Reveal>
           <div className="mx-auto max-w-3xl text-center">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#D6AD52]/20 bg-[#D6AD52]/10 text-[#D6AD52]">
+            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]">
               <Images size={27} />
             </div>
 
@@ -61,7 +61,7 @@ export default function GallerySection({
               className="mt-5 text-4xl font-semibold text-white sm:text-5xl"
             >
               Academy
-              <span className="ml-3 font-display font-normal text-[#D6AD52]">
+              <span className="ml-3 font-display font-normal text-[#16A34A]">
                 Gallery.
               </span>
             </h2>

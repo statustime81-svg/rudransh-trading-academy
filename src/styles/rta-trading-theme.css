@@ -1,0 +1,46 @@
+/* RTA: unified trading green / red visual system. Loaded after globals.css. */
+:root {
+  --rta-green: #16A34A;
+  --rta-green-bright: #22C55E;
+  --rta-red: #DC2626;
+  --rta-red-bright: #EF4444;
+  --rta-base: #07100B;
+  --color-brand-gold: #16A34A; /* legacy token compatibility */
+  --color-brand-gold-dark: #15803D;
+  --color-brand-gold-light: #4ADE80;
+}
+.eyebrow { color: #4ADE80; }
+.btn-gold { background: var(--rta-green) !important; border-color: var(--rta-green) !important; color: white !important; }
+.btn-gold:hover, .btn-gold:focus-visible { background: var(--rta-red) !important; border-color: var(--rta-red) !important; color: white !important; box-shadow: 0 9px 30px rgba(220,38,38,.28) !important; }
+.btn-outline { border-color: rgba(34,197,94,.45) !important; }
+.btn-outline:hover { border-color: var(--rta-red) !important; background: rgba(220,38,38,.12) !important; }
+::selection { background: var(--rta-green-bright); color: #03110A; }
+:focus-visible { outline-color: var(--rta-green-bright); }
+/* Keep gold styles in existing third-party components from bleeding into main theme. */
+#main-content a[class*="bg-[#16A34A]"]:hover,
+#main-content button[class*="bg-[#16A34A]"]:hover {
+  background-color: var(--rta-red) !important;
+  border-color: var(--rta-red) !important;
+  color: white !important;
+  box-shadow: 0 8px 26px rgba(220,38,38,.22);
+}
+/* Animation on decorative elements only. Main artwork remains still. */
+.rta-new-hero__art, .rta-new-hero__art-column {
+  animation: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+.rta-new-hero__art { opacity: 1 !important; filter: drop-shadow(0 18px 32px rgba(10,120,50,.35)); }
+.rta-new-hero__art-column {
+  background: radial-gradient(ellipse at 52% 49%, rgba(34,197,94,.23) 0%, rgba(16,185,129,.12) 29%, rgba(6,25,14,.02) 65%, transparent 78%);
+  border-radius: 50%;
+}
+@media (prefers-reduced-motion: reduce) {
+  .rta-new-hero__halo { animation: none !important; }
+}
+
+/* Subtle motion on cards and active links without moving hero image. */
+#main-content article, #main-content .premium-card { transition: transform .32s ease, border-color .32s ease, box-shadow .32s ease; }
+#main-content article:hover, #main-content .premium-card:hover { border-color: rgba(34,197,94,.4); }
+#main-content a:focus-visible, footer a:focus-visible { outline: 2px solid #22C55E; outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { #main-content article, #main-content .premium-card { transition: none !important; } }

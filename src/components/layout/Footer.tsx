@@ -41,11 +41,11 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-[#FFD21A]/20 bg-[#0B0D10] text-[#F5F3EE]">
-      {/* Gold top line */}
+    <footer className="relative overflow-hidden border-t border-[#16A34A]/20 bg-[#0B0D10] text-[#F5F3EE]">
+      {/* Red top line */}
       <div
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#FFD21A]/50 to-transparent"
+        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#16A34A]/50 to-transparent"
       />
 
       <div className="mx-auto max-w-[1280px] px-5 pb-4 pt-7 sm:px-8 lg:px-10">
@@ -59,9 +59,9 @@ export default function Footer() {
               aria-label="Rudransh Trading Academy Home"
               className="group flex items-center gap-3"
             >
-              <div className="flex h-[66px] w-[66px] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#FFD21A]/25 bg-[#FFD21A]/5 sm:h-[72px] sm:w-[72px]">
+              <div className="flex h-[66px] w-[66px] shrink-0 items-center justify-center overflow-hidden rounded-xl border border-[#16A34A]/25 bg-[#16A34A]/5 sm:h-[72px] sm:w-[72px]">
                 {logoFailed ? (
-                  <span className="font-display text-xl text-[#FFD21A]">
+                  <span className="font-display text-xl text-[#16A34A]">
                     RTA
                   </span>
                 ) : (
@@ -80,7 +80,7 @@ export default function Footer() {
                   RUDRANSH
                 </span>
 
-                <span className="mt-1 block text-[11px] font-semibold tracking-[0.15em] text-[#FFD21A]">
+                <span className="mt-1 block text-[11px] font-semibold tracking-[0.15em] text-[#16A34A]">
                   TRADING ACADEMY
                 </span>
               </div>
@@ -94,7 +94,7 @@ export default function Footer() {
               href={siteConfig.contact.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="group mt-3 inline-flex items-center gap-2 text-xs font-semibold text-[#FFD21A] transition-colors hover:text-white"
+              className="group mt-3 inline-flex items-center gap-2 text-xs font-semibold text-[#16A34A] transition-colors hover:text-[#22C55E]"
             >
               <MessageCircle size={15} />
               Enquire on WhatsApp
@@ -107,7 +107,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#FFD21A]">
+            <h3 className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#16A34A]">
               Quick Links
             </h3>
 
@@ -122,11 +122,11 @@ export default function Footer() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="group flex min-w-0 items-center gap-2 text-[12px] text-white/65 transition-colors duration-200 hover:text-[#FFD21A]"
+                    className="group flex min-w-0 items-center gap-2 text-[12px] text-white/65 transition-colors duration-200 hover:text-[#22C55E]"
                   >
                     <Icon
                       size={14}
-                      className="shrink-0 text-[#FFD21A]/80 transition-transform group-hover:scale-110"
+                      className="shrink-0 text-[#16A34A]/80 transition-all group-hover:scale-110 group-hover:text-[#22C55E]"
                       aria-hidden="true"
                     />
 
@@ -141,18 +141,18 @@ export default function Footer() {
 
           {/* Contact Information */}
           <div>
-            <h3 className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#FFD21A]">
+            <h3 className="text-[11px] font-bold uppercase tracking-[0.16em] text-[#16A34A]">
               Contact Information
             </h3>
 
             <div className="mt-3 space-y-3">
               <a
                 href={siteConfig.contact.tel}
-                className="flex items-center gap-2.5 text-xs text-white/70 transition-colors hover:text-[#FFD21A]"
+                className="flex items-center gap-2.5 text-xs text-white/70 transition-colors hover:text-[#22C55E]"
               >
                 <Phone
                   size={16}
-                  className="shrink-0 text-[#FFD21A]"
+                  className="shrink-0 text-[#16A34A]"
                 />
                 {siteConfig.contact.phoneDisplay}
               </a>
@@ -161,11 +161,11 @@ export default function Footer() {
                 href={siteConfig.contact.maps}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-2.5 text-xs leading-5 text-white/70 transition-colors hover:text-[#FFD21A]"
+                className="flex items-start gap-2.5 text-xs leading-5 text-white/70 transition-colors hover:text-[#22C55E]"
               >
                 <MapPin
                   size={16}
-                  className="mt-0.5 shrink-0 text-[#FFD21A]"
+                  className="mt-0.5 shrink-0 text-[#16A34A]"
                 />
                 <span>{siteConfig.address.full}</span>
               </a>
@@ -186,12 +186,12 @@ export default function Footer() {
   <div
     className="flex h-11 w-11 shrink-0 items-center
                justify-center overflow-hidden rounded-full
-               border border-[#FFD21A]/35 bg-white p-1
-               shadow-[0_0_18px_rgba(255,210,26,0.10)]
+               border border-[#16A34A]/35 bg-white p-1
+               shadow-[0_0_18px_rgba(22,163,74,0.10)]
                transition-all duration-300
                group-hover:scale-110
-               group-hover:border-[#FFD21A]
-               group-hover:shadow-[0_0_25px_rgba(255,210,26,0.25)]"
+               group-hover:border-[#22C55E]
+               group-hover:shadow-[0_0_25px_rgba(34,197,94,0.3)]"
   >
     {nexovaFailed ? (
       <span className="text-xs font-bold text-black">
@@ -214,7 +214,7 @@ export default function Footer() {
       Developed By
     </p>
 
-    <p className="mt-0.5 flex items-center gap-1.5 text-xs font-bold text-[#FFD21A] transition-colors group-hover:text-[#FFE15C]">
+    <p className="mt-0.5 flex items-center gap-1.5 text-xs font-bold text-[#16A34A] transition-colors group-hover:text-[#22C55E]">
       NEXOVA X
 
       <ArrowUpRight
@@ -234,7 +234,7 @@ export default function Footer() {
         <div className="mt-5 flex items-start gap-2 border-t border-white/10 pt-3">
           <ShieldCheck
             size={15}
-            className="mt-0.5 shrink-0 text-[#FFD21A]"
+            className="mt-0.5 shrink-0 text-[#16A34A]"
           />
           <p className="text-[10px] leading-5 text-white/45">
             {siteConfig.disclaimer}
@@ -249,7 +249,7 @@ export default function Footer() {
 
           <p>
             Developed by{" "}
-            <span className="font-semibold text-[#FFD21A]">
+            <span className="font-semibold text-[#16A34A]">
               {siteConfig.developer.name}
             </span>
             {" | "}

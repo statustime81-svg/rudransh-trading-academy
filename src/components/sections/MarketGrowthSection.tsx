@@ -87,7 +87,7 @@ export default function MarketGrowthSection() {
           data-growth-reveal
           className="mx-auto mb-9 max-w-3xl text-center"
         >
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFD21A]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#16A34A]">
             The Learning Experience
           </p>
 
@@ -96,7 +96,7 @@ export default function MarketGrowthSection() {
             className="mt-3 font-display text-[clamp(2.3rem,4vw,4rem)] leading-[1.12]"
           >
             Explore the Market.
-            <span className="block italic text-[#FFD21A]">
+            <span className="block italic text-[#F87171]">
               One Concept at a Time.
             </span>
           </h2>
@@ -110,13 +110,13 @@ export default function MarketGrowthSection() {
         {/* Left text + right moving chart */}
         <div className="grid items-center gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-12">
           <div data-growth-reveal>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#FFD21A]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#16A34A]">
               Interactive Education
             </p>
 
             <h3 className="mt-4 font-display text-[clamp(2rem,3.2vw,3.5rem)] leading-[1.13]">
               Understand the
-              <span className="block italic text-[#FFD21A]">
+              <span className="block italic text-[#16A34A]">
                 Market Concepts.
               </span>
             </h3>
@@ -138,7 +138,7 @@ export default function MarketGrowthSection() {
                     key={topic.label}
                     className="flex items-center gap-3"
                   >
-                    <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
+                    <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]">
                       <Icon
                         size={17}
                         strokeWidth={1.7}
@@ -158,9 +158,9 @@ export default function MarketGrowthSection() {
               href="#courses"
               className="
                 mt-8 inline-flex items-center gap-2
-                rounded-full bg-[#FFD21A]
+                rounded-full bg-[#16A34A]
                 px-6 py-3.5 text-sm font-semibold
-                text-[#0B0D10]
+                text-white
                 transition-transform duration-300
                 hover:-translate-y-1
               "

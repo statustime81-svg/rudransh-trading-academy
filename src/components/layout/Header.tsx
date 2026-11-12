@@ -11,8 +11,7 @@ import {
 import { siteConfig } from "@/config/site";
 
 // Theme
-const GOLD = "#FFD21A";
-const GOLD_DARK = "#FFB800";
+const GREEN = "#16A34A";
 
 export default function Header() {
   const reduceMotion = useReducedMotion();
@@ -144,7 +143,7 @@ export default function Header() {
           "transition-[background-color,border-color,box-shadow]",
           "duration-300",
           scrolled || menuOpen
-            ? "border-[#FFD21A]/30 bg-[#0B111C]/95 shadow-[0_18px_55px_rgba(0,0,0,0.35)]"
+            ? "border-[#16A34A]/30 bg-[#0B111C]/95 shadow-[0_18px_55px_rgba(0,0,0,0.35)]"
             : "border-white/15 bg-[#0B111C]/65 shadow-[0_12px_40px_rgba(0,0,0,0.18)]",
         ].join(" ")}
       >
@@ -169,17 +168,17 @@ export default function Header() {
                 relative flex h-12 w-12
                 shrink-0 items-center justify-center
                 rounded-full bg-black
-                ring-1 ring-[#FFD21A]/50
+                ring-1 ring-[#16A34A]/50
                 transition-all duration-300
-                group-hover:ring-[#FFD21A]
-                group-hover:shadow-[0_0_30px_rgba(255,210,26,0.25)]
+                group-hover:ring-[#22C55E]
+                group-hover:shadow-[0_0_30px_rgba(34,197,94,0.25)]
                 sm:h-14 sm:w-14
               "
             >
               {logoError ? (
                 <span
                   className="font-display text-xl"
-                  style={{ color: GOLD }}
+                  style={{ color: GREEN }}
                 >
                   RTA
                 </span>
@@ -211,7 +210,7 @@ export default function Header() {
                   mt-1 block
                   text-[9px] font-semibold
                   tracking-[0.17em]
-                  text-[#FFD21A]
+                  text-[#16A34A]
                   sm:text-[11px]
                 "
               >
@@ -245,10 +244,10 @@ export default function Header() {
                   className={[
                     "relative rounded-full",
                     "px-4 py-3 text-[13px]",
-                    "font-medium transition-colors duration-200",
+                    "font-medium transition-colors duration-200 hover:text-[#22C55E]",
                     active
-                      ? "text-[#FFD21A]"
-                      : "text-slate-300 hover:text-white",
+                      ? "text-[#16A34A]"
+                      : "text-slate-300 hover:text-[#22C55E]",
                   ].join(" ")}
                 >
                   {active && (
@@ -257,8 +256,8 @@ export default function Header() {
                       className="
                         absolute inset-0 -z-10
                         rounded-full
-                        border border-[#FFD21A]/25
-                        bg-[#FFD21A]/10
+                        border border-[#16A34A]/25
+                        bg-[#16A34A]/10
                       "
                       transition={
                         reduceMotion
@@ -287,17 +286,17 @@ export default function Header() {
               group hidden min-h-12
               shrink-0 items-center justify-center
               gap-2 rounded-full
-              bg-[#FFD21A]
+              bg-[#16A34A]
               px-5 text-[13px]
-              font-semibold text-[#071426]
-              shadow-[0_5px_24px_rgba(255,210,26,0.10)]
+              font-semibold text-[#052E16]
+              shadow-[0_5px_24px_rgba(22,163,74,0.10)]
               transition-all duration-300
               hover:-translate-y-0.5
-              hover:bg-[#FFE15C]
-              hover:shadow-[0_8px_32px_rgba(255,210,26,0.22)]
+              hover:bg-[#22C55E]
+              hover:shadow-[0_8px_32px_rgba(34,197,94,0.28)]
               focus-visible:outline-2
               focus-visible:outline-offset-4
-              focus-visible:outline-[#FFD21A]
+              focus-visible:outline-[#16A34A]
               lg:inline-flex
             "
           >
@@ -332,12 +331,12 @@ export default function Header() {
               flex h-11 w-11
               shrink-0 items-center justify-center
               rounded-full
-              border border-[#FFD21A]/30
-              bg-[#FFD21A]/10
-              text-[#FFD21A]
-              transition-colors duration-300
-              hover:border-[#FFD21A]/60
-              hover:bg-[#FFD21A]/15
+              border border-[#16A34A]/30
+              bg-[#16A34A]/10
+              text-[#16A34A]
+              transition-colors duration-300 hover:text-[#22C55E]
+              hover:border-[#22C55E]/60
+              hover:bg-[#22C55E]/15
               lg:hidden
             "
           >
@@ -360,6 +359,4 @@ export default function Header() {
   );
 }
 
-// Main gold: #FFD21A
-// Dark gold: #FFB800
-void GOLD_DARK;
+// Trading green: #16A34A | Hover green: #22C55E

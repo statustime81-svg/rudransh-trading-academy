@@ -155,9 +155,9 @@ export default function AboutSection() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
       >
-        <div className="absolute -left-40 top-[15%] h-[35vw] w-[35vw] min-h-72 min-w-72 rounded-full bg-[#FFD21A]/[0.045] blur-[110px]" />
+        <div className="absolute -left-40 top-[15%] h-[35vw] w-[35vw] min-h-72 min-w-72 rounded-full bg-[#16A34A]/[0.045] blur-[110px]" />
 
-        <div className="absolute -right-40 bottom-0 h-[30vw] w-[30vw] min-h-64 min-w-64 rounded-full bg-[#FFD21A]/[0.025] blur-[100px]" />
+        <div className="absolute -right-40 bottom-0 h-[30vw] w-[30vw] min-h-64 min-w-64 rounded-full bg-[#16A34A]/[0.025] blur-[100px]" />
       </div>
 
       <div className="relative mx-auto max-w-[1280px]">
@@ -169,21 +169,21 @@ export default function AboutSection() {
           >
             <div
               aria-hidden="true"
-              className="pointer-events-none absolute inset-0 rounded-[26px] border border-[#FFD21A]/10"
+              className="pointer-events-none absolute inset-0 rounded-[26px] border border-[#16A34A]/10"
             />
 
             <div
               className="
                 group relative aspect-[4/5] w-full
                 overflow-hidden rounded-[26px]
-                border border-[#FFD21A]/25
+                border border-[#16A34A]/25
                 bg-[#100E0B]
                 shadow-[0_28px_85px_rgba(0,0,0,0.38)]
               "
             >
               <div
                 aria-hidden="true"
-                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,210,26,0.13),transparent_70%)]"
+                className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(22,163,74,0.13),transparent_70%)]"
               />
 
               {/* Gold illustration */}
@@ -215,12 +215,12 @@ export default function AboutSection() {
                         onError={() => setLogoFailed(true)}
                       />
                     ) : (
-                      <span className="font-display text-6xl text-[#FFD21A]">
+                      <span className="font-display text-6xl text-[#16A34A]">
                         RTA
                       </span>
                     )}
 
-                    <span className="text-center text-xs font-semibold tracking-[0.16em] text-[#FFD21A]">
+                    <span className="text-center text-xs font-semibold tracking-[0.16em] text-[#F87171]">
                       RUDRANSH TRADING ACADEMY
                     </span>
                   </div>
@@ -234,23 +234,23 @@ export default function AboutSection() {
               />
 
               {/* Top badge */}
-              <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-[#FFD21A]/25 bg-[#0B0D10]/75 px-3 py-2 backdrop-blur-xl">
-                <span className="h-1.5 w-1.5 rounded-full bg-[#FFD21A]" />
+              <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-[#16A34A]/25 bg-[#0B0D10]/75 px-3 py-2 backdrop-blur-xl">
+                <span className="h-1.5 w-1.5 rounded-full bg-[#16A34A]" />
 
-                <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-[#FFE15C]">
+                <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-[#22C55E]">
                   Rudransh / Patna
                 </span>
               </div>
 
               {/* Bottom caption */}
-              <div className="absolute inset-x-5 bottom-5 flex items-center justify-between gap-3 border-t border-[#FFD21A]/20 pt-3">
+              <div className="absolute inset-x-5 bottom-5 flex items-center justify-between gap-3 border-t border-[#16A34A]/20 pt-3">
                 <span className="text-[10px] font-medium uppercase tracking-[0.15em] text-[#F5F3EE]/70">
                   Learn • Understand • Analyze
                 </span>
 
                 <ArrowUpRight
                   size={18}
-                  className="text-[#FFD21A]"
+                  className="text-[#16A34A]"
                   aria-hidden="true"
                 />
               </div>
@@ -264,9 +264,9 @@ export default function AboutSection() {
               data-about-reveal
               className="flex items-center gap-3"
             >
-              <span className="h-px w-9 bg-[#FFD21A]" />
+              <span className="h-px w-9 bg-[#16A34A]" />
 
-              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#FFD21A]">
+              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#16A34A]">
                 About The Academy
               </span>
             </div>
@@ -283,7 +283,7 @@ export default function AboutSection() {
               "
             >
               Where Knowledge
-              <span className="mt-1 block italic text-[#FFD21A]">
+              <span className="mt-1 block italic text-[#16A34A]">
                 Meets the Market.
               </span>
             </h2>
@@ -322,17 +322,17 @@ export default function AboutSection() {
                     key={item.title}
                     className="
                       group rounded-2xl border
-                      border-[#FFD21A]/15
+                      border-[#16A34A]/15
                       bg-[#F5F3EE]/[0.025]
                       p-[clamp(0.9rem,1.5vw,1.25rem)]
                       transition-all duration-300
                       hover:-translate-y-1
-                      hover:border-[#FFD21A]/40
-                      hover:bg-[#FFD21A]/[0.04]
+                      hover:border-[#16A34A]/40
+                      hover:bg-[#16A34A]/[0.04]
                     "
                   >
                     <div className="flex items-start gap-3">
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#FFD21A]/20 bg-[#FFD21A]/10 text-[#FFD21A]">
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#16A34A]/20 bg-[#16A34A]/10 text-[#16A34A]">
                         <Icon
                           size={19}
                           strokeWidth={1.6}
@@ -362,7 +362,7 @@ export default function AboutSection() {
             >
               <MapPin
                 size={16}
-                className="shrink-0 text-[#FFD21A]"
+                className="shrink-0 text-[#F87171]"
               />
 
               <span>
@@ -380,15 +380,15 @@ export default function AboutSection() {
                 className="
                   group inline-flex min-h-12
                   items-center justify-center gap-3
-                  rounded-full bg-[#FFD21A]
+                  rounded-full bg-[#16A34A]
                   px-6 py-3 text-sm font-semibold
-                  text-[#0B0D10]
+                  text-white
                   transition-all duration-300
                   hover:-translate-y-1
-                  hover:shadow-[0_12px_35px_rgba(255,210,26,0.2)]
+                  hover:shadow-[0_12px_35px_rgba(22,163,74,0.2)]
                   focus-visible:outline-2
                   focus-visible:outline-offset-4
-                  focus-visible:outline-[#FFD21A]
+                  focus-visible:outline-[#16A34A]
                 "
               >
                 Explore Curriculum
@@ -401,7 +401,7 @@ export default function AboutSection() {
 
               <a
                 href="#contact"
-                className="group inline-flex min-h-11 items-center gap-2 text-sm font-medium text-[#F5F3EE]/80 transition-colors hover:text-[#FFD21A]"
+                className="group inline-flex min-h-11 items-center gap-2 text-sm font-medium text-[#F5F3EE]/80 transition-colors hover:text-[#16A34A]"
               >
                 Contact Academy
 

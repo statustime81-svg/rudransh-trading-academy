@@ -4,11 +4,12 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { siteConfig } from "@/config/site";
 import "@/styles/hero.css";
-import "@/styles/hero-gold-overrides.css";
+import "@/styles/rta-trading-theme.css";
+import "@/styles/rta-hero-green.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const HERO_IMAGE = "/assets/hero/trading-hand-chart.png";
+const HERO_IMAGE = "/assets/hero/trading-green-transparent.png";
 
 export default function HeroSection() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -26,30 +27,10 @@ export default function HeroSection() {
           .fromTo("[data-hero-line]", { yPercent: 108, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.85, stagger: 0.12 }, "-=0.22")
           .fromTo("[data-hero-desc]", { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65 }, "-=0.42")
           .fromTo("[data-hero-actions]", { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.65 }, "-=0.4")
-          .fromTo("[data-hero-art]", { y: 48, scale: 0.94, opacity: 0 }, { y: 0, scale: 1, opacity: 1, duration: 1.2 }, 0.15)
           .fromTo("[data-hero-footer]", { y: 15, opacity: 0 }, { y: 0, opacity: 1, duration: 0.6 }, "-=0.35");
 
         gsap.to("[data-hero-halo]", {
           scale: 1.12, opacity: 0.8, duration: 5, yoyo: true, repeat: -1, ease: "sine.inOut",
-        });
-        gsap.to("[data-hero-art]", {
-          y: -12, duration: 4.2, yoyo: true, repeat: -1, ease: "sine.inOut",
-        });
-      }, section);
-      return () => ctx.revert();
-    });
-
-    media.add("(min-width: 1024px) and (prefers-reduced-motion: no-preference)", () => {
-      const ctx = gsap.context(() => {
-        gsap.to("[data-hero-art-wrap]", {
-          yPercent: -9,
-          ease: "none",
-          scrollTrigger: {
-            trigger: section,
-            start: "top top",
-            end: "bottom top",
-            scrub: 0.8,
-          },
         });
       }, section);
       return () => ctx.revert();
